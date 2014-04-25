@@ -9,6 +9,7 @@ build:
 	./venv/bin/pip install gevent
 	./venv/bin/pip install https://github.com/mozilla-services/loads/archive/master.zip
 	./venv/bin/pip install PyBrowserID
+	./venv/bin/pip install requests
 
 # Clean all the things installed by `make build`.
 clean:
