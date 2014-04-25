@@ -82,6 +82,7 @@ class TestVerifier(unittest.TestCase):
         }
         body.update(kwds)
         body = json.dumps(body)
+        print "Verifier URL: ", self.server_url
         print "POST: ", body
         r = requests.post(self.server_url + "/v2", body, headers={
             "Content-Type": "application/json"
